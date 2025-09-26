@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shuborna's Creation - দোকান তালিকা</title>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* ছোট কাস্টোম স্টাইল */
+    body { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <header class="bg-white shadow-sm">
+    <div class="container mx-auto px-4 py-6 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <!-- Simple logo -->
+        <div class="w-12 h-12 bg-yellow-300 rounded flex items-center justify-center text-xl font-bold">SC</div>
+        <div>
+          <h1 class="text-xl font-semibold">Shuborna's Creation</h1>
+          <p class="text-sm text-gray-500">যেখানে আমাদের পণ্যগুলো পাওয়া যায়</p>
+        </div>
+      </div>
+      <nav class="hidden md:flex gap-4">
+        <a href="#list" class="text-sm hover:underline">দোকান তালিকা</a>
+        <a href="#contact" class="text-sm hover:underline">যোগাযোগ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 py-8">
+    <section class="mb-6">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+        <div>
+          <h2 class="text-2xl font-bold">দোকানগুলো</h2>
+          <p class="text-gray-600">নিচের তালিকা থেকে আপনার নিকটস্থ দোকান খুঁজুন।</p>
+        </div>
+        <div class="w-full md:w-1/3">
+          <label class="block mb-1 text-sm text-gray-600">Search / অনুসন্ধান</label>
+          <input id="search" type="search" placeholder="শহর / এখানে টাকার দোকানের নাম লিখুন..." class="w-full px-4 py-2 border rounded shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-300" />
+        </div>
+      </div>
+    </section>
+
+    <section id="list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Example shop card (repeat as needed) -->
+
+      <article class="shop-card bg-white rounded-lg shadow p-4" data-name="Gafargaon Handicrafts" data-city="Gafargaon">
+        <div class="flex items-start gap-3">
+          <div class="w-16 h-16 bg-yellow-50 rounded flex items-center justify-center text-yellow-600 font-bold">GF</div>
+          <div class="flex-1">
+            <h3 class="font-semibold text-lg">Gafargaon Handicrafts</h3>
+            <p class="text-sm text-gray-500">ঠিকানা: 138, KBI Road, Gafargaon, Mymensingh</p>
+            <p class="text-sm mt-2">পণ্য: ক아서 মুকুট, কসমেটিক বক্স, হ্যান্ডক্রাফট জিনিসপত্র</p>
+            <div class="mt-3 flex items-center gap-2 text-sm">
+              <a href="tel:+8801302855453" class="px-3 py-1 border rounded text-yellow-700">কল করুন</a>
+              <a href="https://www.google.com/maps/search/?api=1&query=138+KBI+Road+Gafargaon" target="_blank" class="px-3 py-1 border rounded text-gray-700">নকশা</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="shop-card bg-white rounded-lg shadow p-4" data-name="Mymensingh Gift Center" data-city="Mymensingh">
+        <div class="flex items-start gap-3">
+          <div class="w-16 h-16 bg-yellow-50 rounded flex items-center justify-center text-yellow-600 font-bold">MG</div>
+          <div class="flex-1">
+            <h3 class="font-semibold text-lg">Mymensingh Gift Center</h3>
+            <p class="text-sm text-gray-500">ঠিকানা: Court Road, Mymensingh</p>
+            <p class="text-sm mt-2">পণ্য: উপহারের বাক্স, পার্সোনালাইজড আইটেম</p>
+            <div class="mt-3 flex items-center gap-2 text-sm">
+              <a href="tel:+8801712345678" class="px-3 py-1 border rounded text-yellow-700">কল করুন</a>
+              <a href="https://www.google.com/maps/search/?api=1&query=Court+Road+Mymensingh" target="_blank" class="px-3 py-1 border rounded text-gray-700">নকশা</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="shop-card bg-white rounded-lg shadow p-4" data-name="Dhaka Artisan Store" data-city="Dhaka">
+        <div class="flex items-start gap-3">
+          <div class="w-16 h-16 bg-yellow-50 rounded flex items-center justify-center text-yellow-600 font-bold">DS</div>
+          <div class="flex-1">
+            <h3 class="font-semibold text-lg">Dhaka Artisan Store</h3>
+            <p class="text-sm text-gray-500">ঠিকানা: Dhanmondi, Dhaka</p>
+            <p class="text-sm mt-2">পণ্য: কসমেটিক সেট, গহনা, হোম ডেকোর</p>
+            <div class="mt-3 flex items-center gap-2 text-sm">
+              <a href="tel:+8801711122233" class="px-3 py-1 border rounded text-yellow-700">কল করুন</a>
+              <a href="https://www.google.com/maps/search/?api=1&query=Dhanmondi+Dhaka" target="_blank" class="px-3 py-1 border rounded text-gray-700">নকশা</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- add more sample cards for the user to edit -->
+      <article class="shop-card bg-white rounded-lg shadow p-4" data-name="Chandpur Crafts" data-city="Chandpur">
+        <div class="flex items-start gap-3">
+          <div class="w-16 h-16 bg-yellow-50 rounded flex items-center justify-center text-yellow-600 font-bold">CC</div>
+          <div class="flex-1">
+            <h3 class="font-semibold text-lg">Chandpur Crafts</h3>
+            <p class="text-sm text-gray-500">ঠিকানা: Main Market, Chandpur</p>
+            <p class="text-sm mt-2">পণ্য: ব্যাগ, কাগজী উপহার বাক্স</p>
+            <div class="mt-3 flex items-center gap-2 text-sm">
+              <a href="tel:+8801722233344" class="px-3 py-1 border rounded text-yellow-700">কল করুন</a>
+              <a href="https://www.google.com/maps/search/?api=1&query=Main+Market+Chandpur" target="_blank" class="px-3 py-1 border rounded text-gray-700">নকশা</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+    <section class="mt-8" id="contact">
+      <div class="bg-white rounded-lg shadow p-6">
+        <h3 class="text-lg font-semibold">তথ্য ও যোগাযোগ</h3>
+        <p class="text-sm text-gray-600 mt-2">আপনি যদি আপনার দোকান যুক্ত করতে চান বা তথ্য পরিবর্তন করতে চান, নিচের ফর্মটি ব্যবহার করে জানাবেন।</p>
+        <form class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+          <input type="text" placeholder="দোকানের নাম" class="p-2 border rounded" />
+          <input type="text" placeholder="শহর / জেলা" class="p-2 border rounded" />
+          <input type="text" placeholder="ঠিকানা" class="p-2 border rounded" />
+          <input type="tel" placeholder="ফোন (optional)" class="p-2 border rounded" />
+          <textarea placeholder="সংক্ষিপ্ত বিবরণ" class="p-2 border rounded md:col-span-2"></textarea>
+          <div class="md:col-span-2 text-right">
+            <button type="button" class="px-4 py-2 bg-yellow-400 rounded font-semibold">সাবমিট</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="mt-8 text-center text-sm text-gray-500">© Shuborna's Creation — সকল অধিকার সংরক্ষিত</footer>
+  </main>
+
+  <script>
+    // ফ্রন্টএন্ড সার্চ ফিল্টার (নাম বা শহর অনুসারে)
+    const searchInput = document.getElementById('search');
+    searchInput.addEventListener('input', function(e){
+      const q = e.target.value.trim().toLowerCase();
+      const cards = document.querySelectorAll('.shop-card');
+      cards.forEach(card => {
+        const name = card.getAttribute('data-name').toLowerCase();
+        const city = card.getAttribute('data-city').toLowerCase();
+        if(!q || name.includes(q) || city.includes(q)){
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      })
+    });
+  </script>
+</body>
+</html>
